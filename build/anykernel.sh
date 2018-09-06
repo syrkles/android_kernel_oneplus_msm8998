@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() {
-kernel.string=RedMatter Kernel for OP5/5T by Sayved - Based on Redflare by Maxim Tresk
+kernel.string=
 do.devicecheck=1
 do.modules=0
 do.cleanup=1
@@ -37,7 +37,7 @@ chown -R root:root $ramdisk/*;
 ## AnyKernel install
 dump_boot;
 # begin ramdisk changes
-insert_line init.rc "init.redmatter.rc" before "import /init.environ.rc" "import /init.redmatter.rc";
+insert_line init.rc "init.syrkles.rc" before "import /init.environ.rc" "import /init.syrkles.rc";
 # end ramdisk changes
 write_boot;
 
