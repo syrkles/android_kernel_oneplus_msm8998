@@ -256,13 +256,13 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH		?= arm64
 CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
-CC		:= /home/syrklesloveskeri/kernel/prebuilts/clang/host/linux-x86/clang-r328903/bin/clang
-CLANG_TRIPLE	:= aarch64-linux-gnu-
-SK		:= /home/syrklesloveskeri/kernel/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
-SK_TC		:= /home/syrklesloveskeri/kernel/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/
-ARCH		:= arm64
-SUBARCH		:= arm64
-CROSS_COMPILE	:= $(SK_TC)aarch64-linux-android-
+# CC		:= /home/syrklesloveskeri/kernel/prebuilts/clang/host/linux-x86/clang-r328903/bin/clang
+# CLANG_TRIPLE	:= aarch64-linux-gnu-
+# SK		:= /home/syrklesloveskeri/kernel/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/
+# SK_TC		:= /home/syrklesloveskeri/kernel/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/
+# ARCH		:= arm64
+# SUBARCH		:= arm64
+# CROSS_COMPILE	:= $(SK_TC)aarch64-linux-android-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
