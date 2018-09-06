@@ -24,7 +24,7 @@
 	dc=oneplus5_defconfig
 
 # Source Path to kernel tree
-	k=/home/syrklesloveskeri/kernel/
+	k=/home/syrklesloveskeri/kernel
 
 # Source Path to clean(empty) out folder
 	co=$k/out
