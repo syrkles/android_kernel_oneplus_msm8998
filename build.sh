@@ -55,6 +55,8 @@
 ##############################
     ac=arm64
     tc=/home/syrklesloveskeri/kernel/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+    clang=/home/syrklesloveskeri/kernel/prebuilts/clang/host/linux-x86/clang-r328903/bin/clang
+    triple=aarch64-linux-gnu-
 
 ############################################################
 # Cleanup
@@ -92,11 +94,11 @@
 ############################################################
 
 	echo "	First pass started.."
-    make "$o" -j4 ARCH="$ac" CROSS_COMPILE="$tc"
+    make "$o" -j4 ARCH="$ac" CC="$clang" CLANG_TRIPLE="$triple" CROSS_COMPILE="$tc"
 	echo "	First pass completed!"
 	echo "	"
 	echo "	Starting Second Pass.."
-    make "$o" -j4 ARCH="$ac" CROSS_COMPILE="$tc"
+    make "$o" -j4 ARCH="$ac" CC="$clang" CLANG_TRIPLE="$triple" CROSS_COMPILE="$tc"
 	echo "	Second pass completed!"
 
 ############################################################
