@@ -21,16 +21,16 @@
 ############################################################ 
 
 # Source defconfig used to build
-	dc=redmatter_defconfig
+	dc=oneplus5_defconfig
 
 # Source Path to kernel tree
-	k=/home/sayved/RedMatter/RedMatter
+	k=/home/syrklesloveskeri/kernel/
 
 # Source Path to clean(empty) out folder
 	co=$k/out
 
 # Compile Path to out 
-	o="O=/home/sayved/RedMatter/RedMatter/out"
+	o="O=/home/syrklesloveskeri/kernel/out"
 
 # Source Path to compiled Image.gz-dtb
 	i=$k/out/arch/arm64/boot/Image.gz-dtb
@@ -49,7 +49,7 @@
 
 # Kernel zip Name
 ##############################
-	kn=RedMatter-v0.10
+	kn=DuRAN-v0.01
 
 ############################################################
 # Cleanup
