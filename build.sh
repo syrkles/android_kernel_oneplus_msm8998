@@ -51,6 +51,11 @@
 ##############################
 	kn=DuRAN-v0.01
 
+# Toolchain
+##############################
+    ac=arm64
+    tc=/home/syrklesloveskeri/kernel/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+
 ############################################################
 # Cleanup
 ############################################################
@@ -68,22 +73,30 @@
 	echo "	Created new out directory"
 
 ############################################################
+# Make upload folder
+############################################################
+
+	echo "	Making new out directory"
+	mkdir -p "$up"
+	echo "	Created new out directory"
+
+############################################################
 # Establish defconfig
 ############################################################
 
 	echo "	Establishing build environment.."
-	make "$o" "$dc"
+	make "$o" "$dc" ARCH=arm64
 
 ############################################################
 # Start Compile
 ############################################################
 
 	echo "	First pass started.."
-	make "$o" -j4
+    make "$o" -j4 ARCH="$ac" CROSS_COMPILE="$tc"
 	echo "	First pass completed!"
 	echo "	"
 	echo "	Starting Second Pass.."
-	make "$o" -j4
+    make "$o" -j4 ARCH="$ac" CROSS_COMPILE="$tc"
 	echo "	Second pass completed!"
 
 ############################################################
