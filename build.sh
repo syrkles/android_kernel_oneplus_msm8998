@@ -24,13 +24,13 @@
 	dc=oneplus5_defconfig
 
 # Source Path to kernel tree
-	k=/home/syrklesloveskeri/kernel
+	k=/home/syrklesloveskeri/kernel/kernel
 
 # Source Path to clean(empty) out folder
 	co=$k/out
 
 # Compile Path to out 
-	o="O=/home/syrklesloveskeri/kernel/out"
+	o="O=$k/out"
 
 # Source Path to compiled Image.gz-dtb
 	i=$k/out/arch/arm64/boot/Image.gz-dtb
