@@ -24,7 +24,7 @@
 	dc=oneplus5_defconfig
 
 # Source Path to kernel tree
-	k=/home/syrklesloveskeri/kernel/kernel
+	k=/home/syrklesloveskeri/kernel/kernel/oneplus/msm8998
 
 # Source Path to clean(empty) out folder
 	co=$k/out
@@ -49,7 +49,7 @@
 
 # Kernel zip Name
 ##############################
-	kn=DuRAN-v0.01
+	kn=DuRAN-v1.zip
 
 # Toolchain
 ##############################
