@@ -8,10 +8,9 @@ config SRCARCH
 	string
 	option env="SRCARCH"
 
-config CUSTOM_ROM
-	bool "Custom ROM support"
-	default n
+config VENDOR_ONEPLUS
+	bool "ONEPLUS support"
 	help
-	  Enable this for custom ROM specific features/hacks
+	  This feature enables OnePlus specific hacks
 
 source "arch/$SRCARCH/Kconfig"
