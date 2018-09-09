@@ -49,7 +49,7 @@
 
 # Kernel zip Name
 ##############################
-	kn=DuRAN-v1.zip
+	kn=Liquid_High-Kernel-v1.zip
 
 # Toolchain
 ##############################
